@@ -4,6 +4,7 @@ require "multi_json"
 require "welcu_api/event"
 require "welcu_api/company"
 require "welcu_api/ticket"
+require "welcu_api/attendee"
 
 module WelcuApi
   @api_base = "http://api.welcu.com/v1"
@@ -53,7 +54,6 @@ module WelcuApi
   end
 
   def self.execute_request(opts)
-    puts opts.inspect
     RestClient::Request.execute(opts)
   end
 end

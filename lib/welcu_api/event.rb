@@ -15,10 +15,9 @@ module WelcuApi
 
     def initialize
       response = WelcuApi.request(:get, WelcuApi::Event.event_url, @api_key, {})
-
       json_event = MultiJson.load(response)
 
-      @id = json_event["id"]
+      @id = json_event["id"].to_i
       @name = json_event["name"]
 
       @starts_at = Time.new json_event["starts_at"]

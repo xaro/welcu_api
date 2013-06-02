@@ -5,12 +5,14 @@ module WelcuApi
     attr_reader :starts_at
     attr_reader :ends_at
     attr_reader :location
+    attr_reader :code
 
     def initialize(ticket_json)
-      @id = ticket_json["id"]
+      @id = (ticket_json["id"] || ticket_json["ticket_id"]).to_i
       @name = ticket_json["name"]
-      @starts_at = Time.new ticket_json["starts_at"]
-      @ends_at = Time.new ticket_json["ends_at"]
+      @code = ticket_json["code"]
+      @starts_at = Time.new(ticket_json["starts_at"]) unless ticket_json["starts_at"].nil?
+      @ends_at = Time.new(ticket_json["ends_at"]) unless ticket_json["ends_at"].nil?
       @location = ticket_json["location"]
     end
   end
