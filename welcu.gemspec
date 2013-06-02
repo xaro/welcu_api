@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'welcu'
-  s.version     = '0.1.1'
+  s.version     = '0.1.2'
   s.date        = '2013-06-01'
   s.summary     = "Ruby wrapper for the Welcu API"
   s.description = "Ruby wrapper for the Welcu API V1"
