@@ -6,6 +6,7 @@ Unofficial Ruby Wrapper for the Welcu API V1 (http://developer.welcu.com/v1/)
 TODO
 ====
 
+* Handle Exception
 * Clean Code
 * Tests
 * Documentation
