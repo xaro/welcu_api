@@ -3,6 +3,7 @@ require "multi_json"
 
 require "welcu_api/event"
 require "welcu_api/company"
+require "welcu_api/ticket"
 
 module WelcuApi
   @api_base = "http://api.welcu.com/v1"

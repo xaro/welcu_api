@@ -9,7 +9,9 @@ module WelcuApi
     attr_reader :state
     attr_reader :url
     attr_reader :public
+    attr_reader :location
     attr_reader :company
+    attr_reader :tickets
 
     def initialize
       response = WelcuApi.request(:get, WelcuApi::Event.event_url, @api_key, {})
@@ -27,7 +29,12 @@ module WelcuApi
       @url = json_event["url"]
       @public = json_event["public"] == "true"
       @company = WelcuApi::Company.new(json_event["company"]["id"], json_event["company"]["name"])
+      @location = json_event["location"]
 
+      @tickets = []
+      json_event["tickets"].each do |ticket|
+        @tickets << WelcuApi::Ticket.new(ticket)
+      end
     end
 
     private
