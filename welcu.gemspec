@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name          = 'welcu'
-  s.version       = '0.1.4'
+  s.version       = '0.1.5'
   s.date          = '2013-06-01'
   s.summary       = "Ruby wrapper for the Welcu API"
   s.description   = "Ruby wrapper for the Welcu API V1"
@@ -15,4 +15,5 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/xaro/welcu_api'
 
   s.add_runtime_dependency "rest-client"
+  s.add_runtime_dependency "multi_json"
 end
