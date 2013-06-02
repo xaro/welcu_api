@@ -2,6 +2,7 @@ require "rest_client"
 require "multi_json"
 
 require "welcu_api/event"
+require "welcu_api/company"
 
 module WelcuApi
   @api_base = "http://api.welcu.com/v1"
