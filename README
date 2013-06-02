@@ -3,6 +3,21 @@ Welcu Api V1
 
 Ruby Wrapper for the Welcu API V1 (http://developer.welcu.com/v1/)
 
+Installation
+============
+
+Use
+
+  gem install welcu
+
+and
+
+  require 'welcu_api'
+
+or using Bundler, in your Gemfile:
+
+  gem 'welcu', :require => 'welcu_api'
+
 TODO
 ====
 
