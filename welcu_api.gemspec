@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'WelcuApi'
+  s.name        = 'welcu_api'
   s.version     = '0.1.0'
   s.date        = '2013-06-01'
   s.summary     = "Ruby wrapper for the Welcu API"
@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.email       = 'xaro@poo.cl'
   s.files       = ["lib/welcu_api.rb"]
   s.homepage    =
-    'http://rubygems.org/gems/welcu_api'
+    'https://github.com/xaro/welcu_api'
 end
